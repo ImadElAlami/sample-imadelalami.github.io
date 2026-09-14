@@ -421,6 +421,10 @@ const Home = () => {
               Payment can be made through bank transfer (RIB), PayPal or Cash.  <a href="#contact" className="text-brand-blue hover:underline">contact me</a>
             </p>
             <p className="text-brand-dark/80 text-lg mb-10 leading-relaxed">
+              {/* Hosting and domaine prices are exlcuded as they are monthly/yearly fees that are to be paid by the client directly to the hosting provider or to me if I provide the hosting and domain name. */}
+              Domain & hosting are not included in the package price and are available as an optional annual package.
+            </p>
+            <p className="text-brand-dark/80 text-lg mb-10 leading-relaxed">
               For larger projects, payment may be divided into two parts: one payment to start the project and the remaining balance after completion. 
             </p>
            
@@ -709,8 +713,8 @@ const Portfolio = () => {
             <div className="space-y-6">
               {[
                 { name: 'PHP / Laravel', level: 85 },
-                { name: 'SQL', level: 85 },
-                { name: 'Front-End', level: 75 },
+                { name: 'SQL', level: 90 },
+                { name: 'Front-End', level: 85 },
                 { name: 'UI/UX Design', level: 80 },
                 { name: 'JavaScript', level: 70 },
                 { name: 'Tailwind CSS', level: 80 },
@@ -752,12 +756,17 @@ const Portfolio = () => {
             </h2>
             <div className="space-y-12 relative before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-0.5 before:bg-brand-blue/10">
               {[
-                
+                {
+                  title: 'Freelance - Full Stack Web Developer',
+                  company: 'Freelance',
+                  date: '2026 - Now',
+                  desc: 'Freelance Web Developer specializing in modern, responsive websites, professional CV/resume websites, and high-converting landing pages. Focused on clean UI, intuitive UX, SEO, performance, and delivering scalable solutions from concept to deployment.'
+                },
                 {
                   title: 'Full Stack Senior Developer (PHP/python) - iClinika',
                   company: '4DBC',
                   date: '2024 - Now',
-                  desc: 'Leading a team of 15+ developers in creating high-end digital experiences. Developed and maintained scalable web applications from scratch related to online medical care. Optimized database queries. Creating and analysing Databses using UML diagrams'
+                  desc: 'Leading a team of 20+ developers in creating high-end digital experiences. Developed and maintained scalable web applications from scratch related to online medical care. Optimized database queries. Creating and analysing Databses using UML diagrams'
                 },
                 {
                   title: 'Wordpress Developer',
@@ -1103,7 +1112,7 @@ const About_Landing = () => {
             <p className="text-brand-dark/80 text-lg mb-10 leading-relaxed">
               For landing pages, I provide 3 months of free support after the project is completed.            </p>
             <ul className="space-y-4 mb-10">
-              {['Designed for marketing campaigns and promotions', 'Focused on converting visitors into leads or customers', 'Optimized layout for user engagement'].map((item, i) => (
+              {['Designed for marketing campaigns and promotions', 'Focused on converting visitors into leads or customers', 'Optimized layout for user engagement','50% discount CV page for students'].map((item, i) => (
                 <li key={i} className="flex items-center gap-3">
                   <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center text-white">
                     <ChevronRight size={14} />
@@ -1116,6 +1125,12 @@ const About_Landing = () => {
                     <ChevronRight size={20} />
                   </div>
                   <span className="text-brand-dark/90">3 months of free support included</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center text-white">
+                    <ChevronRight size={20} />
+                  </div>
+                  <span className="text-brand-dark/90">$30/month for maintenance after the free maintenance period.</span>
                 </li>
             </ul>
             <Link to="/portfolio" className="btn-primary inline-block">View Full Resume</Link>
@@ -1198,6 +1213,12 @@ const About_Portfolio = () => {
                   </div>
                   <span className="text-brand-dark/90">2 months of free support included</span>
                 </li>
+              <li className="flex items-center gap-3">
+                <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center text-white">
+                  <ChevronRight size={20} />
+                </div>
+                <span className="text-brand-dark/90">$30/month for maintenance after the free maintenance period.</span>
+              </li>
             </ul>
             <Link to="/portfolio" className="btn-primary inline-block">View Full Resume</Link>
           </motion.div>
@@ -1501,6 +1522,11 @@ const HomeFR = () => {
               </p>
 
               <p className="text-brand-dark/80 text-lg mb-10 leading-relaxed">
+                {/* Hosting and domaine prices are exlcuded as they are monthly/yearly fees that are to be paid by the client directly to the hosting provider or to me if I provide the hosting and domain name. */}
+                  Le nom de domaine et l’hébergement ne sont pas inclus dans le prix du forfait et sont disponibles en option sous forme de forfait annuel.
+              </p>
+
+              <p className="text-brand-dark/80 text-lg mb-10 leading-relaxed">
                 Pour les grands projets, le paiement peut être divisé en deux parties : début et livraison.
               </p>
 
@@ -1776,8 +1802,8 @@ const PortfolioFR = () => {
             <div className="space-y-6">
               {[
                 { name: "PHP / Laravel", level: 85 },
-                { name: "SQL", level: 85 },
-                { name: "Front-End", level: 75 },
+                { name: "SQL", level: 90 },
+                { name: "Front-End", level: 85 },
                 { name: "UI/UX Design", level: 80 },
                 { name: "JavaScript", level: 70 },
                 { name: "Tailwind CSS", level: 80 },
@@ -1826,6 +1852,12 @@ const PortfolioFR = () => {
 
             <div className="space-y-12 relative before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-0.5 before:bg-brand-blue/10">
               {[
+                {
+                  title: 'Freelance - Développeur Web Full Stack',
+                  company: 'Freelance',
+                  date: '2026 - Aujourd’hui',
+                  desc: 'Développeur Web Freelance spécialisé dans la création de sites web modernes et responsives, de CV professionnels en ligne et de landing pages à fort taux de conversion. Axé sur une interface soignée, une expérience utilisateur intuitive, le SEO, les performances et la mise en place de solutions évolutives, du concept au déploiement.'
+                },
                 {
                   title: "Développeur Full Stack Senior (PHP/Python) - iClinika",
                   company: "4DBC",
@@ -2232,6 +2264,7 @@ const About_LandingFR = () => {
           <p className="text-brand-dark/80 text-lg mb-10 leading-relaxed">
             Pour les landing pages, je fournis 3 mois de support gratuit après la livraison du projet.
           </p>
+          
 
           <ul className="space-y-4 mb-10">
 
@@ -2254,6 +2287,15 @@ const About_LandingFR = () => {
               </div>
               <span className="text-brand-dark/90">
                 3 mois de support gratuit inclus
+              </span>
+            </li>
+
+            <li className="flex items-center gap-3">
+              <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center text-white">
+                <ChevronRight size={20} />
+              </div>
+              <span className="text-brand-dark/90">
+                30 $/mois pour la maintenance après la période de maintenance gratuite.
               </span>
             </li>
 
@@ -2349,7 +2391,8 @@ const About_PortfolioFR = () => {
               "Expérience utilisateur simple et rapide",
               "Design responsive adapté aux mobiles",
               "Idéal pour les portfolios personnels et profils professionnels",
-              "Conçu pour présenter projets, compétences ou services"
+              "Conçu pour présenter projets, compétences ou services",
+              "50% de réduction sur la création de CV pour les étudiants"
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-3">
                 <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center text-white">
@@ -2367,7 +2410,14 @@ const About_PortfolioFR = () => {
                 2 mois de support gratuit inclus
               </span>
             </li>
-
+            <li className="flex items-center gap-3">
+              <div className="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center text-white">
+                <ChevronRight size={20} />
+              </div>
+              <span className="text-brand-dark/90">
+                30 $/mois pour la maintenance après la période de maintenance gratuite.
+              </span>
+            </li>
           </ul>
 
           <Link to="/fr/portfolio" className="btn-primary inline-block">
